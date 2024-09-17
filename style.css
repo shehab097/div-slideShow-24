@@ -1,0 +1,94 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #161616;
+}
+
+.slideshow-container {
+    /* display: flex;
+    justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    height: 100vh;
+}
+
+.slideshow-elements {
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-element {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    scale: 1;
+    opacity: 0;
+    /*position*/
+}
+
+
+.slideshow-element .center {
+    padding-top: 14vh;
+    /* margin: auto; */
+}
+
+.slideshow-element img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.slideshow-element p {
+    font-family: 'Times New Roman', Times, serif;
+
+    font-size: 3rem;
+    text-align: center;
+}
+
+.slideshow-element.genshin {
+    background: linear-gradient(45deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.slideshow-element.genshin p {
+    color: rgb(190, 204, 255);
+    font-family: fantasy;
+}
+
+.slideshow-element.pubg {
+    background: rgb(255, 48, 0);
+    background: linear-gradient(90deg, rgba(255, 48, 0, 1) 0%, rgba(255, 187, 0, 1) 43%, rgba(255, 111, 0, 1) 100%);
+}
+
+.slideshow-element.pubg p {
+    color: rgba(255, 48, 0, 1);
+    font-family: fantasy;
+}
+
+.slideshow-element.gtaVI {
+    background: rgb(63, 94, 251);
+    background: linear-gradient(128deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+
+.slideshow-element.gtaVI p {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.slideshow-element.cyberpunk {
+    background: rgb(255, 187, 0);
+    background: linear-gradient(50deg, rgba(255, 187, 0, 1) 50%, rgba(255, 111, 0, 1) 100%);
+}
+
+
+.slideshow-element.current {
+    scale: 1;
+    opacity: 1;
+    /* transition: all 0.3s; */
+}
